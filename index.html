@@ -4,10 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Karista Coffee</title>
+    <link rel="stylesheet" href="./asset/reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+
 </head>
 <body>
+    <!-- ヘッダー部分 -->
+    <header>
+        <div class="header-left">
+            <!-- 左にロゴを挿入 -->
+            <img class="logo" src="./asset/sirokumalogo.jpeg" alt="">
+        </div>
+        
+        <div class="header-right">
+            <ul class="navbar">
+                <li> <a href="Comcepts">Comcepts</a> </li>
+                <li> <a href="Menu">Menu</a> </li>
+                <li> <a href="Access">Access</a> </li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        
+        <!-- section1 -->
+        <div class="slider">
+            <img src="./asset/jones.jpg" width="300" height="900" alt="">
+            <img src="./asset/FC328396-CB49-4988-A992-EEF96194E867.JPG" width="250" height="900" alt="">
+        </div>
+        <!-- section2 -->
+        <section class="comcepts">
+            <h1 class="title">Our Comcepts</h1>
+            <ul class="tops">
+                <li>１杯で皆を笑顔に</li>
+                <li>おいしく、ゆったりとしたひとときを</li>
+                <li>環境にやさしく</li>
+            </ul>
+        </section>
+        
+        <section id="Menu">
+            <h2>Menu</h2>
+            <div class="contents">
+                <p class="discription">Hot Coffee</p>
+                <img class="contents-img" src="./asset/hotcoffeeimg.jpeg" alt="">
+            </div>
+            <div class="troop">
+                
+                <img class="contents-img" src="./asset/icecoffeeimg.jpeg" alt="">
+                <p class="discription">Ice Coffee</p>
+            </div>
+            <div class="soan">
+                <p class="discription"> Latte(Hot &　Ice)</p>
+                <img class="contents-img" src="./asset/icecaferatteimg.jpeg" alt="">
+            </div>
+            <div class="icing">
+                <p class="discription">季節のスムージー</p>
+                <img class="smmoging" src="./asset/smoogyimg.jpeg" alt="">
+            </div>
+
+        </section>
+        
+        
+
+        <section id="Access">
+            <h3>Access</h3>
+            
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.394731376495!2d139.70656161525847!3d35.66728138019763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca182a31e0b%3A0x99d7a9865079f0a5!2z6KGo5Y-C6YGT44OS44Or44K6!5e0!3m2!1sja!2sjp!4v1628797986971!5m2!1sja!2sjp" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        
+
+
+    </main>
+    
+    
+    
+    
+    <footer>
+        <div>
+            Karista Coffee Inc.
+        </div>
+    </footer>
+  
     
 </body>
 </html>
